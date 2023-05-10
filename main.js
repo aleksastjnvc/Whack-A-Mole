@@ -58,6 +58,7 @@ const countdown = setInterval(() => {
         scoreEl.textContent = score
         location.reload()
     }
+    
 }, 1000)
 
 })
