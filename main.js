@@ -48,7 +48,7 @@ const countdown = setInterval(() => {
     timeLeft--
     timeEl.textContent = timeLeft
     
-    if (timeLeft === 0 || score === 200) {
+    if (timeLeft === 0 || score >= 200) {
         clearInterval(countdown)
         alert('Game over! Your score is' + ' ' + score)
         timeLeft = 60
@@ -58,7 +58,7 @@ const countdown = setInterval(() => {
         scoreEl.textContent = score
         location.reload()
     }
-    
+
 }, 1000)
 
 })

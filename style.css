@@ -18,7 +18,7 @@ body {
     overflow: hidden;
 }
 
-.heading {
+#start-button {
     text-align: center;
     color: white;
     background-color: red;
@@ -28,7 +28,13 @@ body {
     border: 2px solid red;
 }
 
-#start-button {
+#start-button:hover {
+    background-color: #fff;
+    color: red;
+    z-index: 999;
+}
+
+.heading{
     border: none;
     padding: 12px;
     font-size: 1rem;
@@ -36,12 +42,6 @@ body {
     color: white;
     z-index: 999;
     text-transform: uppercase;
-    
-}
-
-#start-button:hover {
-    background-color: rgb(148, 41, 41);
-    cursor: pointer;
 }
 
 .timer {
